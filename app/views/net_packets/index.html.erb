@@ -1,0 +1,10 @@
+<div class="container">
+  <h1>Here is the list of the packets</h1>
+  <%= render 'formindex' %>
+  <%= link_to 'Add a new packet', new_net_packet_path ,class: "btn btn-secondary" %>
+</div>
+<script>
+//after each 10 seconds, this is page will try to get new data from the server
+let GETDATASPAN = 10000;
+let clock = setInterval(getDataFromServer, GETDATASPAN);
+</script>

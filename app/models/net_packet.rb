@@ -1,0 +1,2 @@
+class NetPacket < ApplicationRecord
+end

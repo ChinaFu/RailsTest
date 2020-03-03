@@ -1,0 +1,67 @@
+<%= form_for @net_packet do |f| %>
+  <% if @net_packet.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@net_packet.errors.count, "error") %> prohibited
+        this net_packet from being saved:
+      </h2>
+      <ul>
+        <% @net_packet.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text">starttime</span>
+      </div>
+      <%= f.datetime_local_field :starttime, class: "form-control" %>
+    </div>
+
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text">stoptime</span>
+      </div>
+      <%= f.datetime_local_field :stoptime, class: "form-control" %>
+    </div>
+    
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text">srcip</span>
+      </div>
+      <%= f.text_field :srcip, class: "form-control" %>
+    </div>
+
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text">srcport</span>
+      </div>
+      <%= f.text_field :srcport, class: "form-control" %>
+    </div>
+  
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text">dstip</span>
+      </div>
+      <%= f.text_field :dstip, class: "form-control" %>
+    </div>
+  
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text">dstport</span>
+      </div>
+      <%= f.text_field :dstport, class: "form-control" %>
+    </div>
+  
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text">packets</span>
+      </div>
+      <%= f.number_field :packets, class: "form-control" %>
+    </div>
+  
+    <p>
+      <%= f.submit :"Save the data",class: "btn btn-primary" %>
+    </p>
+<% end %>

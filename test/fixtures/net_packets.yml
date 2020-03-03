@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  starttime: 2020-02-29 18:00:39
+  stoptime: 2020-02-29 18:00:39
+  srcip: MyText
+  srcport: 1
+  dstip: MyText
+  dstport: 1
+  packets: 1
+
+two:
+  starttime: 2020-02-29 18:00:39
+  stoptime: 2020-02-29 18:00:39
+  srcip: MyText
+  srcport: 1
+  dstip: MyText
+  dstport: 1
+  packets: 1

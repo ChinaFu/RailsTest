@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  optime: 2020-03-01 15:52:21
+  pid: 1
+
+two:
+  optime: 2020-03-01 15:52:21
+  pid: 1
